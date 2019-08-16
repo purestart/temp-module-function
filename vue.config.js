@@ -37,6 +37,7 @@ module.exports = {
     console.log(argvs)
     console.log(' ===========================')
     del.sync(['./public/module'], { force: true })
+    del.sync(['./public/assets/external'], { force: true })
     let __pack_external = buildConfigBuilder.getExternal(buildConfig)
     console.log('__pack_external' + JSON.stringify(__pack_external))
     let __externals = {}
