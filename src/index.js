@@ -1,6 +1,6 @@
-import ccmStore from './vuex/'
+import {{options.folder}}Store from './vuex/'
 
-import xxxRegComponents from 'src/util/xxxRegComponents'
-import ccmRoutes from 'src/router/'
+import {{options.folder}}RegComponents from 'src/util/{{options.folder}}RegComponents'
+import {{options.folder}}Routes from 'src/router/'
 
-export { ccmRoutes, ccmStore, xxxRegComponents }
+export { {{options.folder}}Routes, {{options.folder}}Store, {{options.folder}}RegComponents }

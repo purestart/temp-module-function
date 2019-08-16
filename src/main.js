@@ -21,9 +21,9 @@ import {
   baseRegComponents
 } from 'base'
 baseStore.commit('updateProcessEnv', process.env)
-import { ccmRegComponents, ccmRoutes, ccmStore } from './index'
+import { {{options.folder}}RegComponents, {{options.folder}}Routes, {{options.folder}}Store } from './index'
 
-Vue.use(ccmRegComponents)
+Vue.use({{options.folder}}RegComponents)
 Vue.use(baseRegComponents)
 import NProgress from 'nprogress'
 
@@ -98,15 +98,15 @@ let routes = [
         name: '系统管理',
         children: sysRoutes
       },
-      // XX系统路由
+      // {{options.title}}路由
       {
         path: 'sample',
         meta: {
-          title: '票务系统'
+          title: '{{options.title}}'
         },
         component: routerView,
-        name: '票务系统',
-        children: ccmRoutes
+        name: '{{options.title}}',
+        children: {{options.folder}}Routes
       }
     ]
   }

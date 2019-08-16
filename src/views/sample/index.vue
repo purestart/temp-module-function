@@ -1,6 +1,6 @@
 <template>
   <div class="a-c p-t-20 f-20">
-    这是CCM模块
+    这是{{options.folder}}模块
   </div>
 </template>
 

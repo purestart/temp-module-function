@@ -1,4 +1,4 @@
-const ccmRoutes = [
+const {{options.folder}}Routes = [
   {
     path: 'sample',
     meta: {
@@ -8,4 +8,4 @@ const ccmRoutes = [
     name: 'sample页面'
   }
 ]
-export default ccmRoutes
+export default {{options.folder}}Routes
