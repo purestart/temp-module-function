@@ -3,8 +3,8 @@ const del = require('del')
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 //   .BundleAnalyzerPlugin;
 const CompressionPlugin = require('compression-webpack-plugin') //开户gzip压缩
-const MergeModulePlugin = require('../merge-module-plugin')
-const HtmlModulePlugin = require('../html-module-plugin')
+const MergeModulePlugin = require('merge-module-plugin')
+const HtmlModulePlugin = require('html-module-plugin')
 
 const buildConfigBuilder = require('../parent/src/build.config')
 let buildConfig = buildConfigBuilder.getConfig('{{options.folder}}')
