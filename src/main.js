@@ -100,7 +100,7 @@ let routes = [
       },
       // {{options.title}}路由
       {
-        path: 'sample',
+        path: '{{options.path}}',
         meta: {
           title: '{{options.title}}'
         },
