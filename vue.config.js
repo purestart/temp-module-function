@@ -7,11 +7,11 @@ const MergeModulePlugin = require('../merge-module-plugin')
 const HtmlModulePlugin = require('../html-module-plugin')
 
 const buildConfigBuilder = require('../parent/src/build.config')
-let buildConfig = buildConfigBuilder.getConfig('{{options.folder}}')
+let buildConfig = buildConfigBuilder.getConfig('ccm')
 
 const isProduction = process.env.NODE_ENV === 'production'
 const envConfigBuilder = require('../parent')
-let envConfig = envConfigBuilder.getEnv('{{options.folder}}')
+let envConfig = envConfigBuilder.getEnv('ccm')
 
 function resolve(dir) {
   return path.join(__dirname, dir)
