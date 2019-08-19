@@ -184,7 +184,8 @@ module.exports = {
     //   .set('@utils', resolve('src/assets/utils'))
   },
   devServer: {
-    port: 8083
+    port: {{options.port}},
+    host: '127.0.0.1'
     // proxy: {
     //   "/api": {
     //     ws: false,
