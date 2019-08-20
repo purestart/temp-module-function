@@ -1,6 +1,6 @@
 // import DyTable from '../components/DyTable/DyTable.vue'
 import '../assets/css/element-common.scss'
-import {{options.folder}}List from 'src/http/interface'
+import {{options.folder}}List from '{{options.folder}}src/http/interface'
 
 export default {
   install(Vue) {

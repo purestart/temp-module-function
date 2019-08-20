@@ -176,7 +176,7 @@ module.exports = {
     //   }
     // })
     // 设置一些别名
-    config.resolve.alias.set('src', resolve('src'))
+    config.resolve.alias.set('{{options.folder}}src', resolve('src'))
     // config.resolve.alias
     //   .set('@g', resolve('src/global'))
     //   .set('@bc', resolve('src/baseComponent'))
