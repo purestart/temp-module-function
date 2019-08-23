@@ -13,9 +13,7 @@
   },
   "dependencies": {
     "js-md5": "^0.7.3",
-    "vue": "^2.5.11",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
