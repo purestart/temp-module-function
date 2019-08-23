@@ -22,10 +22,16 @@ import {
 } from 'base'
 baseStore.commit('updateProcessEnv', process.env)
 import { {{options.folder}}RegComponents, {{options.folder}}Routes, {{options.folder}}Store } from './index'
+import NProgress from 'nprogress'
 
 Vue.use({{options.folder}}RegComponents)
 Vue.use(baseRegComponents)
-import NProgress from 'nprogress'
+if ({{options.folder}}Store) {
+  for (var key in {{options.folder}}Store) {
+    console.log(key)
+    baseStore.registerModule(key, {{options.folder}}Store[key])
+  }
+}
 
 const setGlobalTopNavs = function(to, next) {
   let matchedLength = to.matched.length
