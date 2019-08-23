@@ -11,8 +11,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-const HtmlModulePlugin = require('../../html-module-plugin')
-const MergeModulePlugin = require('../../merge-module-plugin')
+const HtmlModulePlugin = require('html-module-plugin')
+const MergeModulePlugin = require('merge-module-plugin')
 
 const buildConfigBuilder = require('../../parent/src/build.config')
 let buildConfig = buildConfigBuilder.getConfig('{{options.folder}}')
