@@ -4,7 +4,7 @@ const {{options.folder}}Routes = [
     meta: {
       title: 'sample页面'
     },
-    component: resolve => require(['{{options.folder}}Src/views/sample/index'], resolve),
+    component: import(/* webpackChunkName: "frame" */ '{{options.folder}}Src/views/sample/index'),
     name: 'sample页面'
   }
 ]
