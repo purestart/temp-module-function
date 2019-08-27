@@ -14,9 +14,9 @@ function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-let __pack_external = buildConfigBuilder.getExternal(buildConfig)
+let packExternal = buildConfigBuilder.getExternal(buildConfig)
 
-console.log('__pack_external' + JSON.stringify(__pack_external))
+console.log('__pack_external' + JSON.stringify(packExternal))
 
 let __externals = {}
 buildConfig.plugins.forEach(item => {
@@ -59,7 +59,8 @@ module.exports = {
     vuedraggable: 'vuedraggable',
     nprogress: 'NProgress',
     moment: 'moment',
-    ...__pack_external,
+    'crypto-js': 'CryptoJS',
+    ...packExternal,
     ...__externals
   },
   resolve: {
