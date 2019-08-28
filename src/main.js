@@ -18,10 +18,11 @@ import {
   Main,
   Home,
   App,
-  baseRegComponents
+  baseRegComponents,
+  baseRouterView
 } from 'base'
 baseStore.commit('updateProcessEnv', process.env)
-import { {{options.folder}}RegComponents, {{options.folder}}Routes, {{options.folder}}Store } from './index'
+import { {{options.folder}}RegComponents, {{options.folder}}Routes, {{options.folder}}Store, {{options.folder}}RouterView } from './index'
 import NProgress from 'nprogress'
 
 Vue.use({{options.folder}}RegComponents)
@@ -100,7 +101,7 @@ let routes = [
         meta: {
           title: '系统管理'
         },
-        component: routerView,
+        component: baseRouterView,
         name: '系统管理',
         children: sysRoutes
       },
@@ -110,7 +111,7 @@ let routes = [
         meta: {
           title: '{{options.title}}'
         },
-        component: routerView,
+        component: {{options.folder}}RouterView,
         name: '{{options.title}}',
         children: {{options.folder}}Routes
       }
