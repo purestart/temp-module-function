@@ -66,6 +66,7 @@ module.exports = {
     'vue-awesome-swiper': 'VueAwesomeSwiper',
     'v-charts': 'VeIndex',
     echarts: 'echarts',
+    lodash: '_',
     ...packExternal,
     ...__externals
   },
