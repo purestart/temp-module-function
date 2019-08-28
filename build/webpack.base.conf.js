@@ -60,6 +60,8 @@ module.exports = {
     nprogress: 'NProgress',
     moment: 'moment',
     'crypto-js': 'CryptoJS',
+    jquery: 'jQuery',
+    'vue-echarts': 'VueECharts',
     ...packExternal,
     ...__externals
   },
