@@ -23,7 +23,10 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     semi: ['error', 'always'],
     'no-unused-vars': 0,
-    'one-var': 0
+    'one-var': 0,
+    eqeqeq: 'off',
+    'no-callback-literal': 0,
+    'standard/no-callback-literal': 0
   },
   globals: {
     requireModule: true
