@@ -84,10 +84,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new HtmlModulePlugin({
-      config: buildConfig,
-      publicPath: '/static/'
-    }),
+    // new HtmlModulePlugin({
+    //   config: buildConfig,
+    //   publicPath: '/static/'
+    // }),
     new MergeModulePlugin({
       config: buildConfig,
       dirname: __dirname,
@@ -124,9 +124,7 @@ module.exports = new Promise((resolve, reject) => {
         new FriendlyErrorsPlugin({
           compilationSuccessInfo: {
             messages: [
-              `Your application is running here: http://${
-                devWebpackConfig.devServer.host
-              }:${port}`
+              `Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`
             ]
           },
           onErrors: config.dev.notifyOnErrors

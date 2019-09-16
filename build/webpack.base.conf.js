@@ -66,7 +66,7 @@ module.exports = {
     'vue-awesome-swiper': 'VueAwesomeSwiper',
     'v-charts': 'VeIndex',
     echarts: 'echarts',
-    lodash: '_',
+    // lodash: '_',
     ...packExternal,
     ...__externals
   },
@@ -115,6 +115,17 @@ module.exports = {
         options: {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: 'dependencies-loader',
+        // include: [resolve('src'), resolve('test')],
+        options: {
+          debug: false,
+          private: 'oristar',
+          config: buildConfig,
+          publicPath: '/static/'
         }
       }
     ]

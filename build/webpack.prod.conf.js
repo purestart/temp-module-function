@@ -136,10 +136,10 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new HtmlModulePlugin({
-      config: buildConfig,
-      publicPath: './static/'
-    }),
+    // new HtmlModulePlugin({
+    //   config: buildConfig,
+    //   publicPath: './static/'
+    // }),
     new MergeModulePlugin({
       config: buildConfig,
       dirname: __dirname,
