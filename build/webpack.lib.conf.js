@@ -94,7 +94,7 @@ if (config.build.productionGzip) {
       test: new RegExp(
         '\\.(' + config.build.productionGzipExtensions.join('|') + ')$'
       ),
-      threshold: 10240,
+      threshold: 1024 * 200,
       minRatio: 0.8
     })
   )
