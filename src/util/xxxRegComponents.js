@@ -4,10 +4,9 @@ import {{options.folder}}List from '{{options.folder}}Src/http/interface'
 
 export default {
   install(Vue) {
-    // Vue.prototype.$c = constant
-    // Vue.prototype.$utils = utils
-    // Vue.prototype.$bus = utils.bus
-    // Vue.prototype.$to = utils.to
+    // 模块工具注册 请加模块名
+    // Vue.prototype.${{options.folder}}Utils = utils
+
     Object.defineProperties(Vue.prototype, {
       //挂载在Vue原型的 $api 对象上
       ${{options.folder}}List: {
@@ -17,6 +16,7 @@ export default {
       }
     })
 
-    // Vue.component('dy-table', DyTable)
+    // 模块组件注册 请加模块名
+    // Vue.component('xxx-dy-table', DyTable)
   }
 }
