@@ -59,7 +59,11 @@ const webpackConfig = merge(baseWebpackConfig, {
       // filename: utils.assetsPath('css/[name].[contenthash].css')
       filename: '{{options.folder}}.css'
     }),
-    new OptimizeCSSPlugin(),
+    new OptimizeCSSPlugin({
+      cssProcessorOptions: {
+        safe: true
+      }
+    }),
     // new HtmlModulePlugin({
     //   config: buildConfig,
     //   publicPath: '/static/'
