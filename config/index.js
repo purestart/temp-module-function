@@ -31,6 +31,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     // assetsSubDirectory: '/',
     productionSourceMap: true,
+    // devtool: 'source-map',
     productionGzip: true,
     productionGzipExtensions: ['js', 'css'],
     bundleAnalyzerReport: process.env.npm_config_report
