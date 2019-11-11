@@ -9,7 +9,12 @@ del.sync(['./static/assets/external'], { force: true })
 
 const buildConfigBuilder = require('../../parent/src/build.config')
 let buildConfig = buildConfigBuilder.getConfig('{{options.folder}}')
-console.log(buildConfig)
+// console.log(buildConfig)
+var buildConfigInfo = JSON.parse(JSON.stringify(buildConfig));
+buildConfigInfo.source = [];
+console.log('');
+console.log(buildConfigInfo);
+console.log('');
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
